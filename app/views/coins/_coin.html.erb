@@ -1,22 +1,23 @@
 <div id="<%= dom_id coin %>">
-  <p>
-    <strong>Description:</strong>
-    <%= coin.description %>
-  </p>
+  <table class="table">
+    <p>
+      <strong>Description:</strong>
+      <%= coin.description %>
+    </p>
 
-  <p>
-    <strong>Acronym:</strong>
-    <%= coin.acronym %>
-  </p>
+    <p>
+      <strong>Acronym:</strong>
+      <%= coin.acronym %>
+    </p>
 
-  <p>
-    <strong>Image:</strong>
-    <%= image_tag coin.url_image, width: 40, height: 40 %>
-  </p>
+    <p>
+      <strong>Image:</strong>
+      <%= image_tag coin.url_image, width: 40, height: 40 %>
+    </p>
 
-  <p>
-    <strong>Mining Type:</strong>
-    <%= coin.mining_type.description %>
-  </p>
-
+    <p>
+      <strong>Mining Type:</strong>
+      <%= coin.mining_type %>
+    </p>
+  </table>
 </div>
